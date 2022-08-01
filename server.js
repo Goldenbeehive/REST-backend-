@@ -33,6 +33,11 @@ let articles = [
 // Endpoints:
 // reg -> register user for the first time
 // login -> login existing user 
+// logout -> logout user
+// token -> refreshes jwt token
+// user/posts -> show news headlines
+// user/comment/:id -> comment on news in id
+// user/view/:id -> view comment on news in id 
 let pool = mysql.createPool({
     host : host,
     user : ' ',
